@@ -8,7 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -35,6 +43,7 @@
           <li class="lista-menu__item">
             <a href="#" class="lista-menu__link">Business</a>
           </li>
+
           <li class="lista-menu__item">
             <a href="#" class="lista-menu__link">Design & UX</a>
           </li>
@@ -44,7 +53,21 @@
           alt="Logo da Alurabooks"
           class="container__imagem"
         />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Alura</b>Books
+        </h1>
       </div>
+
+      <ul class="opcoes">
+        <li class="opcoes__item">Categorias</li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Minha estante</a>
+        </li>
+      </ul>
+
       <div class="container">
         <a href="#"
           ><img
@@ -77,5 +100,136 @@
         placeholder="Qual será sua próxima leitura?"
       />
     </section>
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Novos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides / contendo as imagens-->
+          <div class="swiper-slide">
+            <img src="./img/ApacheKafka.svg" alt="Capa do livro Apache" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Liderança.svg" alt="Livro sobre liderança" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Javascript.svg" alt="Livro sobre JS" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Guia Front-end.svg" alt="Livro Guia Front End" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Portugol.svg" alt="Livro sobre React" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/Acessibilidade.svg"
+              alt="Livro sobre Acessibilidade"
+            />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1a Linha  -  Primeira linha do card -->
+        <div class="card__descricao">
+          <!-- 1a Coluna -  Primeira Coluna que contem os textos -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">
+              Talvez você também se interesse por ...
+            </h3>
+            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descricao__texto">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+          </div>
+          <!-- 2a Coluna  -  Segunda coluna que contem a imagem -->
+          <img
+            src="img/Angular.svg"
+            class="descricao__imagem"
+            alt="Capa livro Angular"
+          />
+        </div>
+        <!-- 2a Linha  -  Segunda linha do card -->
+        <div class="card__botoes">
+          <!-- 1a Coluna  -  Primeira coluna que contem os 2 icones -->
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="img/Favoritos.svg" alt="Favoritar o livro" />
+            </li>
+            <li class="botoes__item">
+              <img src="img/Sacola.svg" alt="Adicionar ao carrinho" />
+            </li>
+          </ul>
+          <!-- 2a Coluna  -  Segunda coluna que contem o botao laranjado Saiba Mais! -->
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="topicos">
+      <h2 class="topicos__titulo">Tópicos Visitados Recentemente</h2>
+      <ul class="topicos__lista">
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Android</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Marketing Digital</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Agile</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Startups</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">HTML e class</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Python</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">OO</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+      <input
+        type="email"
+        placeholder="Cadastre aqui seu e-mail"
+        class="contato__email"
+      />
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+      <h2 class="rodape__titulo">Grupo Alura</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      })
+    </script>
   </body>
 </html>
